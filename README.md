@@ -52,7 +52,7 @@ export HADOOP_HOME=$(realpath hadoop-2.8.3)
 export HADOOP_COMMON_LIB_NATIVE_DIR="$HADOOP_HOME/lib/native"
 export HADOOP_OPTS="$HADOOP_OPTS -Djava.library.path=$HADOOP_HOME/lib/native"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HADOOP_HOME/lib/native"
-export HADOOP_CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath
+export HADOOP_CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath)
 ```
 
 You also need these two JARs in Flink `lib` directory (or in Python script with `.add_jars()`):
