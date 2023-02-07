@@ -1,6 +1,8 @@
 # PyFlink Compress Connector
 
-This small library provides Python wrapper around Java API for writing compressed bulk file sinks.
+This small library provides Python wrapper around Java API for writing compressed bulk file sinks
+Should be compatible with any Flink version above 1.15.0. As long as the Java API does not change the Python code will
+be valid.
 
 ## Example usage
 
